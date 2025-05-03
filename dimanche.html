@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Formulaire d'enquête</h1>
+
+    <p id="description">Cela va nous aider à optimiser le produit</p>
+
+    <form id="survey-form">
+      <!-- Champ nom -->
+      <label id="name-label" for="name">Nom :</label><br>
+      <input type="text" id="name" name="name" placeholder="jojo" required><br><br>
+
+      <!-- Champ email -->
+      <label id="email-label" for="email">Email :</label><br>
+      <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+
+      <!-- Champ nombre -->
+      <label id="number-label" for="number">Âge :</label><br>
+      <input type="number" id="number" name="number" placeholder="5" min="1" max="20" required><br><br>
+
+      <!-- Liste déroulante -->
+      <label for="dropdown">Votre avis :</label><br>
+      <select id="dropdown" name="avis">
+        <option value="bon">Bon</option>
+        <option value="pas-bon">Pas bon</option>
+      </select><br><br>
+
+      <!-- Boutons radio -->
+      <p>Genre :</p>
+      <input type="radio" id="homme" name="genre" value="Homme" required>
+      <label for="homme">Homme</label><br>
+
+      <input type="radio" id="femme" name="genre" value="Femme">
+      <label for="femme">Femme</label><br><br>
+
+      <!-- Cases à cocher -->
+      <p>Profession :</p>
+      <input type="checkbox" id="enseignant" name="profession" value="enseignant">
+      <label for="enseignant">Enseignant</label><br>
+
+      <input type="checkbox" id="medecin" name="profession" value="medecin">
+      <label for="medecin">Médecin</label><br><br>
+
+      <!-- Zone de texte -->
+      <label for="commentaires">Commentaires :</label><br>
+      <textarea id="commentaires" name="commentaires" placeholder="Laissez vos remarques ici..."></textarea><br><br>
+
+      <!-- Bouton de soumission -->
+      <input type="submit" id="submit" value="Envoyer">
+    </form>
+  </body>
+</html>
